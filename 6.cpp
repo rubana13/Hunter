@@ -21,20 +21,20 @@ int main() {
       for(j=0;j<n;j++)
       {
             if (i != j && arr[i] == arr[j])
-               count++;
+            {
+               count=1;
+               break;
+            }
       }
-  }         
-        
     if(count==1)
-    {
-        cout<<arr[i];
-       
-    }
-    else
+      {
+           cout<<arr[i];
+           break;
+      } 
+   
+}         
+if(count==0)
     {
         cout<<"Unique";
     }
-
-  
-
 }
